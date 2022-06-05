@@ -5,26 +5,41 @@ const removeFromArray = function(testArr) {
 
         let args = Array.from(arguments)
 
-        console.log(args[4])
-        console.log(args[3])
-        console.log(args[2])
-        console.log(args[1])
+        if (typeof args[1] == String) {
+            continue;
+        } 
 
-        if (testArr[deleteNum] == args[1]) {
+        if (testArr[deleteNum] === args[1]) {
             testArr.splice(deleteNum,1);
         } 
         
-        if (testArr[deleteNum] == args[2]) {
+        if (testArr[deleteNum] === args[2]) {
             testArr.splice(deleteNum,1);
         } 
         
-        if (testArr[deleteNum] == args[3]) {
+        if (testArr[deleteNum] === args[3]) {
             testArr.splice(deleteNum,1);
         } 
 
-        if (testArr[deleteNum] == args[4]) {
+        if (testArr[deleteNum] === args[4]) {
         testArr.splice(deleteNum,1);
-      } 
+        } 
+
+        if (testArr[deleteNum] === args[4]) {
+        testArr.splice(deleteNum,1);
+        } 
+    
+        if (testArr[deleteNum] === args[3]) {
+        testArr.splice(deleteNum,1);
+        } 
+    
+        if (testArr[deleteNum] === args[2]) {
+        testArr.splice(deleteNum,1);
+        } 
+
+        if (testArr[deleteNum] === args[1]) {
+        testArr.splice(deleteNum,1);
+        } 
 
     }
 
