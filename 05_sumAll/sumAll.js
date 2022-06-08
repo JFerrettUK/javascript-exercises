@@ -1,13 +1,14 @@
 const sumAll = function(firstDig, secondDig) {
+
     if (firstDig <= 0) {
         return "ERROR";
     } else if (secondDig <= 0) {
         return "ERROR";
     }
 
-    if (firstDig <= NaN) {
+    if (firstDig == String) {
         return "ERROR";
-    } else if (secondDig <= NaN) {
+    } else if (secondDig <= String) {
         return "ERROR";
     }
 
