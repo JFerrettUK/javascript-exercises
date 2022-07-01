@@ -22,7 +22,7 @@ const repeatString = function(string, num) {
     for (let i = 0; i < num; i++) {
         answer = (answer + string);
       }      
-      let finalresult = answer
+      let finalresult = answer;
       return finalresult;
     };
   }
